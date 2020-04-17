@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+      <title>Quiz</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="basketballQuizFinal.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+     
+      </style>
+              </head>
+                    <body>
+                          <div class="container">
+      <!--this is a row-->
+                          <div class="row">
+                            <div class="col-md-6">
+                                <h1>BasketBall Quiz!!!</h1>
+                            </div>
+                            <!--target for our timer-->
+                            <div class="col-md-6">
+                              <h1 id="timerSection"></h1>
+                          </div>
+            <!--Closing 1 row tag-->
+                          </div>
+<!--target for our javascript countdowntimer-->
+                                <!--<div id="timerSection">-->
+
+                                  <!--</div>-->
+
+
+                
+
+     <div>
+       <!--this is the 2nd row-->
+       <div class="row">
+          <div class="col-md-6">
+            <img src="basketBall copy.jpeg" alt="" height="400" width="400">
+          </div>
+          <!--this line is where the quiz section should be-->
+            <div class="col-md-6">
+               
+
+                <!--This is the section for the modal screen-->
+                <a href="#id01">Start Basketball Quiz</a>
+
+                <div id="id01" class="modal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <header class="container">
+                        <a href="#" class="closebtn">×</a>
+                        <h2>Questions</h2>
+                      </header>
+                      <div class="container">
+                        <!--First target with java script below-->
+                        <main>
+                          <form class="questionForm" id="q1" data-question="1">
+                              <h2>1 . "Which Canadian Team won the Nba Championship in 2019?"</h2>
+                              <ul>
+                                  <li><input  name="q1"  type="radio" value="This is an incorrect answer "/>Lakers</li>
+                                  <li><input  name="q1"  type="radio" value="This is the correct answer" />Raptors</li>
+                                  <li><input  name="q1"  type="radio" value="This is an incorrect answer" />Warriors</li>
+                                  <li><input  name="q1"  type="radio" value="This is an incorrect answer" />Nets</li>
+                              </ul>
+                              <button id="submit" >Submit</button>
+                              <div class="q1info"></div>
+                              <button class="next" data-q=1 style="display: none;">Next</button>
+                          </form>
+                  
+                          <form class="questionForm" id="q2" data-question="2">
+                                  <h3>2. "What is the name of the arena that the  Nba Champions of 2019 play at ?"</h3>
+                                  <ul>
+                                      <li><input  name="q2"  type="radio" value="This is an incorrect answer" />SkyDome</li>
+                                      <li><input  name="q2"  type="radio" value="This is an incorrect answer" />RoyalBank center</li>
+                                      <li><input  name="q2"  type="radio" value="This is an incorrect answer" />RoyalBank center</li>
+                                      <li><input  name="q2"  type="radio" value="This is an incorrect answer" />BMO Field</li>
+                                      <li><input  name="q2"  type="radio" value="This is the correct answer" />ScotiaBank Arena</li>
+                                  </ul>
+                                  <button id="submit">Submit</button>
+                                  <div class="q2info"></div>
+                              <button class="next" data-q=2 style="display: none;">Next</button>
+                              </form>
+                  
+                              <form class="questionForm" id="q3" data-question="3">
+                                      <h3>3."Which city did the 2019 Nba Champions play for?"</h3>
+                                      <ul>
+                                          <li><input  name="q3"  type="radio" value="This is an incorrect answer" />Los Angelos</li>
+                                          <li><input  name="q3"  type="radio" value="This is an incorrect answer" />New York</li>
+                                          <li><input  name="q3"  type="radio" value="This is an incorrect answer" />GoldenState</li>
+                                          <li><input  name="q3"  type="radio" value="This is the correct answer" />Toronto</li>
+                                      </ul>
+                                      <button id="submit">Submit</button>
+                                      <div class="q3info"></div>
+                                      <button class="next" data-q=3 style="display: none;">Next</button>
+                                  </form>
+                  
+                                  <form class="questionForm" id="q4" data-question="4">
+                                          <h3>4. "What is the name of the coach that coached the 2019 winning team in BasketBall?"</h3>
+                                          <ul>
+                                              <li><input  name="q4"  type="radio" value="This is an incorrect answer" />Steve Kerr</li>
+                                              <li><input  name="q4"  type="radio" value="This is an incorrect answer" />Dwayne Casey</li>
+                                              <li><input  name="q4"  type="radio" value="This is the correct answer" />Nick Nurse</li>
+                                              <li><input  name="q4"  type="radio" value="This is an incorrect answer" />Phil Jackson</li>
+                                          </ul>
+                                          <button id="submit">Submit</button>
+                                          <div class="q4info"></div>
+                                          <button class="next" data-q=4 style="display: none;">Next</button>
+                                      </form>
+                                      
+                                      <form class="questionForm" id="q5" data-question="5">
+                                              <h3>5. "How big was the celebration for the 2019 winning Nba team"</h3>
+                                              <ul>
+                                                  <li><input  name="q5"  type="radio" value="This is an incorrect answer" />Small gathering</li>
+                                                  <li><input  name="q5"  type="radio" value="This is an incorrect answer" />Concert size gathering</li>
+                                                  <li><input  name="q5"  type="radio" value="This is an incorrect answer" />Enourmus gathering</li>
+                                                  <li><input  name="q5"  type="radio" value="This is the correct answer" />One of a kind gathering</li>
+                                              </ul>
+                                              <button id="submit">Submit</button>
+                                              <div class="q5info"></div>
+                                              <button class="next" data-q=5 style="display: none;">Next</button>
+
+                                          </form>
+                  
+                                          <div id ="results"></div>
+                                          <br>
+                                      </main>
+                        
+                      </div>
+                      <footer class="container">
+                        <p>Good Luck!!!</p>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+
+
+
+            <div>
+<!--this line of code adds to the section under our img -->
+                  <section id="quiz-info">
+                          <h2>Different Quiz games <br>Coming Soon</h2>
+                              <ul>
+                                  <!--<li><strong>BasketBall</strong> <a href="basketballQuizFinal.html.html">BasketBall Quiz!!</a></li>-->
+                                  
+                                 <!--<li><strong>Grand Prize</strong> <a href="grandPrizeQuiz.html">Grand Prize Quiz!!</a></li>--> 
+                              </ul>
+                    </section>
+                    
+      <!--- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> -->
+      </div>
+      <!--this is the closing row 2 tag-->
+      </div>
+      
+
+<!--the ending div container tag-->
+      </div>
+
+<!--this the third row-->
+    <!--<div class="row"> 
+       <div class="col=md-6">
+        <button class="button" type="button" onclick="#id01">Press Start to Begin</button>
+      </div>--> 
+      <!--question area-->
+      <div class="col=md-6">
+        <p id="news1"><b></b></p>
+        <p id="news2"><b></b></p>
+        
+      </div>
+
+      
+   
+   
+   
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="basketballQuizFinal.js">
+    
+        
+        
+        </script>
+        </body>
+        </html>
